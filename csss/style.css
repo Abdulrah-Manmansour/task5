@@ -1,0 +1,251 @@
+
+/*=========start public style=========*/
+:root{
+    --main-color: #f0f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+}
+
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*=======end public style==========*/
+/*========start navbar===========*/
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 10px 10px 9px #ccc;
+    transition: .4s all ease;
+    background-color: #fff;
+    -webkit-transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+    -o-transition: .4s all ease;
+    padding: 20px 0;
+}
+#navbar .links{
+    list-style: none;
+    padding: 20px;
+    transition:.4s all ease ;
+    -webkit-transition:.4s all ease ;
+    -moz-transition:.4s all ease ;
+    -ms-transition:.4s all ease ;
+    -o-transition:.4s all ease ;
+}
+#navbar .links.changecolor{
+    background-color: #f70;
+}
+#navbar  .links li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#navbar .links li a{
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+#navbar.changecolor{
+    background-color: #f70;
+}
+
+.fa-bars{
+    display: none;
+}
+
+#navbar .links.show{
+    opacity: 1;
+    transition:.4s all ease ;
+    -webkit-transition:.4s all ease ;
+    -moz-transition:.4s all ease ;
+    -ms-transition:.4s all ease ;
+    -o-transition:.4s all ease ;
+}
+@media(max-width:999px){
+    #navbar .links{
+        position: relative;
+        width: 100%;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 10px 10px 9px #ccc;
+        padding: 30px 0;
+        text-align: center;
+        opacity: 0;
+        transition: .4s all ese;
+        -webkit-transition: .4s all ese;
+        -moz-transition: .4s all ese;
+        -ms-transition: .4s all ese;
+        -o-transition: .4s all ese;
+}
+    #navbar .links li{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 26px;
+        cursor: pointer;
+    }
+}
+
+
+/*=========end navbar=============*/
+
+/*=======start section counter===========*/
+.counter{
+    background-color:var(--main-color);
+    margin-top: 200px;
+}
+.counter .item{
+    width: 33%;
+}
+.counter .number1{
+    text-align: center;
+    padding: 100px 0;
+}
+.counter .number1 i{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.counter .number1 p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+@media(max-width:999px){
+    .item{
+        width: 100%;
+    }
+    .counter .row{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+/*========end section counter===========*/
+/*=======start color div==========*/
+.colorbox{
+    position: fixed;
+    top: 220px;
+    right:  -200px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 3px 4px 8px #ccc;
+    padding: 50px 0;
+    transition: .4s all ease;
+    z-index: 99999;
+    -webkit-transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+    -o-transition: .4s all ease;
+}
+.colorbox.open{
+    right: 0;
+  
+}
+.colorbox h3{
+    text-align: center;
+}
+.colorbox ul{
+    list-style: none;
+    text-align: center;
+    padding: 30px 0;
+}
+.colorbox ul li{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.colorbox ul li:nth-child(1){
+    background-color: #f00;
+}
+.colorbox ul li:nth-child(2){
+    background-color: #f50;
+}
+.colorbox ul li:nth-child(3){
+    background-color: green;
+}
+.colorbox ul li:nth-child(4){
+    background-color: #f09;
+}
+.colorbox .setting{
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left:  -30px;
+    padding:  8px;
+    text-align: center;
+    width: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 3px 8px #ccc,-2px -3px 8px #ccc;
+}
+
+/*=====end color div===========*/
+/*========start contact section==========*/
+.contact{
+    margin-top: 100px;
+    padding: 0 20px;
+}
+.contact textarea{
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+.contact input,textarea{
+    border: 2px solid #ccc;
+    outline: none;
+}
+.contact  #name,.contact #passowrd{
+margin-bottom: 40px; 
+
+}
+.contact #email{
+width: 400px;
+margin-bottom: 50px;
+}
+
+.pti{
+    padding: 14px 5px;
+}
+
+.contact textarea{
+    width: 400px;
+    height: 200px;
+    
+}
+.contact button{
+    padding: 20px 30px;
+    border: none;
+    background-color: skyblue;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+#name.error,#passowrd.error,#email.error,#textarea.error{
+    border: 2px solid red;
+}
+/*=========end contact section============*/
